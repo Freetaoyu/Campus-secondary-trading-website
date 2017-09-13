@@ -15,7 +15,7 @@
 		</div>	
 		<div id="top_search2">
 			 <span id="modelFlag" style="color:#858e8f;">
-			 	燕山大学校园二手网站&nbsp;&nbsp;&gt;&nbsp;&nbsp;燕山大学${paramsGoods.goods_flagDesc}
+			 	西南交通大学二手交易网站&nbsp;&nbsp;&gt;&nbsp;&nbsp;西南交通大学${paramsGoods.goods_flagDesc}
 			 	<s:if test="#attr.paramsGoods.goods_type1!=null && #attr.paramsGoods.goods_type1!=''">
 			 	&nbsp;&nbsp;&gt;&nbsp;&nbsp;<s:property value="#attr.paramsGoods.goods_type1"/>
 			 	</s:if>

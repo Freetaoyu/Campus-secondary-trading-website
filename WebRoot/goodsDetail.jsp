@@ -232,7 +232,7 @@ $(document).ready(function(){
 		</div>	
 		<div id="contentShow">
 			  <s:property value='#attr.goods.goods_desc' escape="false"/>
-			  <br/>(联系我的时候，请说明是在校园二手街看见的噢！)
+			  <br/>(联系我的时候，请说明是在西南交通大学二手交易网站看见的噢！)
 		</div>	 
 	</div>
 

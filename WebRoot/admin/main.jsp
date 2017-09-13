@@ -29,10 +29,10 @@ table tr td{
     <td height="23">&nbsp;</td>
   </tr>
   <tr>
-    <td height="35" valign="bottom" style=""><p style="font-size:16px; font-weight:bold; text-align:left; padding-left:80px; font-family:Arial, Helvetica, sans-serif; color:#016597;">燕山大学校园二手网站后台</p></td>
+    <td height="35" valign="bottom" style=""><p style="font-size:16px; font-weight:bold; text-align:left; padding-left:80px; font-family:Arial, Helvetica, sans-serif; color:#016597;">西南交通大学二手交易网站后台</p></td>
   </tr>
   <tr>
-    <td align="left" valign="top"><p style="padding-left:60px; padding-top:0px; text-indent:2em; line-height:24px; padding-right:30px; color:#016597;">${admin.user_typeDesc} ${admin.real_name}您好，欢迎您进入燕山大学校园二手网站后台管理。</p></td>
+    <td align="left" valign="top"><p style="padding-left:60px; padding-top:0px; text-indent:2em; line-height:24px; padding-right:30px; color:#016597;">${admin.user_typeDesc} ${admin.real_name}您好，欢迎您进入西南交通大学二手交易网站后台管理。</p></td>
   </tr>
 </table>
 </body>

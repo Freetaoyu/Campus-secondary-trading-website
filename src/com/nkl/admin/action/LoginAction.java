@@ -15,7 +15,7 @@ public class LoginAction  extends BaseAction {
 
 	/**
 	 * @Title: InSystem
-	 * @Description: 用户登录
+	 * @Description: 管理员登陆
 	 * @return String
 	 */
 	public String InSystem(){
@@ -47,7 +47,7 @@ public class LoginAction  extends BaseAction {
 	
 	/**
 	 * @Title: OutSystem
-	 * @Description: 退出登录
+	 * @Description: 管理员退出登录
 	 * @return String
 	 */
 	public String OutSystem(){

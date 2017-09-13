@@ -12,7 +12,8 @@ import com.nkl.common.util.UploadFile;
 @SuppressWarnings("serial")
 public class UploadImgAction extends BaseUploadAction {
 	/**
-	 * 文件上传
+	 * 图片上传
+	 * ty
 	 */
 	public String execute() {
 		Print.println("进入execute方法");

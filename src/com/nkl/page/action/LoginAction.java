@@ -70,14 +70,7 @@ public class LoginAction  extends BaseAction {
 	 * @return String
 	 */
 	public String RegSystem(){
-		try {
-			//查询验证码
-			/*String random = (String)Param.getSession("random");
-			if (!random.equals(params.getRandom())) {
-				setErrorReason("验证码不正确");
-				return "error";
-			}*/
-			
+		try {		
 			//查询用户名是否被占用
 			User user = new User();
 			user.setUser_name(params.getUser_name());

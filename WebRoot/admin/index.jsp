@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>燕山大学校园二手网站后台</title>
+<title>西南交通大学二手交易网站后台</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -12,11 +12,14 @@
 <meta http-equiv="description" content="This is my page">
 <script language="javascript" type="text/javascript" src="js/index.js"></script>
 <script language="javascript" type="text/javascript"> 
-if(${admin==null||admin==''})
-{
-  window.location.href="login.jsp";
-} 
-	
+function toLogin(){
+	var admin='${admin}';
+	if( admin==null||admin=='')
+	{
+	  window.location.href="login.jsp";
+	} 
+}
+toLogin();
 </script>
 <style type="text/css">
  body,td,div

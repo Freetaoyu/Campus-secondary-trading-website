@@ -39,7 +39,7 @@ public class LoginManager {
 	public User getUser(User user){
 		Connection conn = BaseDao.getConnection();
 		if (!StringUtil.isEmptyString(user.getUser_pass())) {
-			user.setUser_pass(Md5.makeMd5(user.getUser_pass()));
+			user.setUser_pass(Md5.makeMd5(user.getUser_pass()));//密码加密处理
 		}
 		User _user = userDao.getUser(user,conn);
 		
@@ -55,9 +55,9 @@ public class LoginManager {
 	public void addUser(User user) {
 		Connection conn = BaseDao.getConnection();
 		if (!StringUtil.isEmptyString(user.getUser_pass())) {
-			user.setUser_pass(Md5.makeMd5(user.getUser_pass()));
+			user.setUser_pass(Md5.makeMd5(user.getUser_pass()));//MD5加密
 		}
-		user.setReg_date(DateUtil.dateToDateString(new Date(), "yyyy-MM-dd HH:mm:ss"));
+		user.setReg_date(DateUtil.dateToDateString(new Date(), "yyyy-MM-dd HH:mm:ss"));//注册时间
 		user.setUser_type(1);
 		userDao.addUser(user,conn);
 		
