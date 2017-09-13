@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="page" extends="json-default" namespace="/">
+	
+	  	<action name="Login*" class="com.nkl.page.action.LoginAction" method="{1}">
+	  		<result name="success" type="json">
+	  			<param name="ignoreHierarchy">false</param>
+            	<param name="includeProperties">
+					success,data.*
+				</param>
+            </result>
+            <result name="error" type="json">
+            	<param name="ignoreHierarchy">false</param>
+			    <param name="includeProperties">
+					success,err.*
+				</param>
+			</result>
+	  	</action>
+	  	
+	  	<action name="page_*" class="com.nkl.page.action.IndexAction" method="{1}">
+	  		<result name="error">Error.jsp</result>
+	  		<result name="index">default.jsp</result>
+	  		<result name="goodsDetail">goodsDetail.jsp</result>
+	  		<result name="goodsBuy">goodsBuy.jsp</result>
+	  		<result name="goodsExchange">goodsExchange.jsp</result>
+	  		<result name="success" type="json">
+	  			<param name="ignoreHierarchy">false</param>
+            	<param name="includeProperties">
+					success,data.*
+				</param>
+            </result>
+            <result name="error2" type="json">
+            	<param name="ignoreHierarchy">false</param>
+			    <param name="includeProperties">
+					success,err.*
+				</param>
+			</result>
+			<result name="reg">reg.jsp</result>
+			<result name="userInfo">myInfo.jsp</result>
+	  		<result name="userPwd">myPwd.jsp</result>
+	  		<result name="myGoodsShow">myGoodsShow.jsp</result>
+	  		<result name="myGoodsEdit">myGoodsEdit.jsp</result>
+	  		<result name="myGoodsDetail">myGoodsDetail.jsp</result>
+	  		<result name="myGoodsBuyShow">myGoodsBuyShow.jsp</result>
+	  		<result name="myGoodsBuyEdit">myGoodsBuyEdit.jsp</result>
+	  		<result name="myGoodsBuyDetail">myGoodsBuyDetail.jsp</result>
+	  		<result name="myGoodsExchangeShow">myGoodsExchangeShow.jsp</result>
+	  		<result name="myGoodsExchangeEdit">myGoodsExchangeEdit.jsp</result>
+	  		<result name="myGoodsExchangeDetail">myGoodsExchangeDetail.jsp</result>
+	  		<result name="ordersShow1">ordersShow1.jsp</result>
+	  		<result name="ordersShow2">ordersShow2.jsp</result>
+	  		<result name="logisticsShow">logisticsShow.jsp</result>
+	  		<result name="collectShow">collectShow.jsp</result>
+	  	</action>
+	  	
+	  	<action name="UploadImg" class="com.nkl.page.action.UploadImgAction"> 
+	  		<param name="savePath">images/goodss</param>	  
+	  		<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg,image/jpg,image/x-png,image/pjpeg</param>	
+	  		<param name="maximunSize">31457280</param>	    
+	  		<result name="success">uploadImg${num}.jsp</result>
+	  		<result name="input">uploadImg${num}.jsp</result>
+	  	</action>
+	  	 
+	</package>
+</struts>    
